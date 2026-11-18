@@ -1,0 +1,196 @@
+{
+  "total_rows": 50000,
+  "total_stocks": 200,
+  "total_days": 250,
+  "columns": [
+    "Unnamed: 0",
+    "stock",
+    "day",
+    "market_cap_class",
+    "sector",
+    "close_price",
+    "volume",
+    "volume_ratio_20d",
+    "volatility",
+    "delivery_pct",
+    "order_book_imbalance",
+    "sentiment_score",
+    "social_mentions",
+    "avg_trade_size",
+    "past_manipulation_flags",
+    "risk_score",
+    "manipulation_label"
+  ],
+  "class_distribution_counts": {
+    "0": 49010,
+    "1": 990
+  },
+  "class_distribution_pct": {
+    "0": 0.9802,
+    "1": 0.0198
+  },
+  "missing_percentage": {
+    "Unnamed: 0": 0.0,
+    "stock": 0.0,
+    "day": 0.0,
+    "market_cap_class": 0.0,
+    "sector": 0.0,
+    "close_price": 0.0,
+    "volume": 0.0,
+    "volume_ratio_20d": 0.0,
+    "volatility": 0.0,
+    "delivery_pct": 3.9600000000000004,
+    "order_book_imbalance": 6.0,
+    "sentiment_score": 8.15,
+    "social_mentions": 0.0,
+    "avg_trade_size": 0.0,
+    "past_manipulation_flags": 0.0,
+    "risk_score": 0.0,
+    "manipulation_label": 0.0
+  },
+  "skewness": {
+    "close_price": 0.11821273262392228,
+    "volume": 1.7305157082064482,
+    "volume_ratio_20d": 5.734530523353656,
+    "volatility": 1.1102534142196436,
+    "delivery_pct": -0.07959110301809459,
+    "order_book_imbalance": 0.11830841739734202,
+    "sentiment_score": 0.037754737070923826,
+    "social_mentions": 11.20423256574528,
+    "avg_trade_size": 0.648080964125431,
+    "past_manipulation_flags": 2.3432884787392836,
+    "risk_score": 6.486669113155312
+  },
+  "cap_class_means": {
+    "manipulation_label": {
+      "large": 0.003,
+      "small": 0.031
+    },
+    "risk_score": {
+      "large": 2.5830525,
+      "small": 4.301647333333333
+    }
+  },
+  "welch_t_test": {
+    "t_statistic": 46.813535253426075,
+    "p_value": 2.6219516156018267e-253,
+    "mean_manipulation_1": 2.877280909090909,
+    "mean_manipulation_0": 1.0844760538665579,
+    "std_manipulation_1": 1.204374843044022,
+    "std_manipulation_0": 0.26825629089750913,
+    "n_manipulation_1": 990,
+    "n_manipulation_0": 49010
+  },
+  "descriptive_statistics": {
+    "close_price": {
+      "count": 50000.0,
+      "mean": 252.5209528,
+      "std": 114.4459280430592,
+      "min": 48.45,
+      "25%": 153.8475,
+      "50%": 255.35000000000002,
+      "75%": 344.78,
+      "max": 708.61
+    },
+    "volume": {
+      "count": 50000.0,
+      "mean": 127856.06433599998,
+      "std": 167336.81127460784,
+      "min": 2110.8,
+      "25%": 12495.475,
+      "50%": 21465.1,
+      "75%": 225373.72499999998,
+      "max": 2459715.1
+    },
+    "volume_ratio_20d": {
+      "count": 50000.0,
+      "mean": 1.11997359,
+      "std": 0.40200713337926935,
+      "min": 0.5061,
+      "25%": 0.9349,
+      "50%": 1.0591,
+      "75%": 1.203,
+      "max": 11.3861
+    },
+    "volatility": {
+      "count": 50000.0,
+      "mean": 0.012245504,
+      "std": 0.0034861228364807544,
+      "min": 0.002,
+      "25%": 0.01002,
+      "50%": 0.01206,
+      "75%": 0.01417,
+      "max": 0.0428
+    },
+    "delivery_pct": {
+      "count": 48020.0,
+      "mean": 51.75493773427739,
+      "std": 9.208748010672682,
+      "min": 6.49,
+      "25%": 45.66,
+      "50%": 51.85,
+      "75%": 57.95,
+      "max": 89.96
+    },
+    "order_book_imbalance": {
+      "count": 47000.0,
+      "mean": 0.004051117021276595,
+      "std": 0.15489806979920312,
+      "min": -0.6768,
+      "25%": -0.09962499999999999,
+      "50%": 0.0023,
+      "75%": 0.1056,
+      "max": 0.7863
+    },
+    "sentiment_score": {
+      "count": 45925.0,
+      "mean": 0.05376544365813827,
+      "std": 0.25406872583858897,
+      "min": -0.98,
+      "25%": -0.1177,
+      "50%": 0.0529,
+      "75%": 0.2243,
+      "max": 0.98
+    },
+    "social_mentions": {
+      "count": 50000.0,
+      "mean": 8.567332,
+      "std": 13.497200401940761,
+      "min": 0.1,
+      "25%": 2.7,
+      "50%": 5.1,
+      "75%": 9.8,
+      "max": 656.1
+    },
+    "avg_trade_size": {
+      "count": 50000.0,
+      "mean": 1448.4421459999999,
+      "std": 859.6562640789411,
+      "min": 285.2,
+      "25%": 750.2,
+      "50%": 947.4,
+      "75%": 2279.9,
+      "max": 4274.6
+    },
+    "past_manipulation_flags": {
+      "count": 50000.0,
+      "mean": 0.33,
+      "std": 0.686374112411332,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 3.0
+    },
+    "risk_score": {
+      "count": 50000.0,
+      "mean": 3.6142094,
+      "std": 9.369527993450259,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.16,
+      "75%": 4.4325,
+      "max": 100.0
+    }
+  }
+}

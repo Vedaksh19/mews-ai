@@ -1,0 +1,567 @@
+{
+  "eda": {
+    "total_rows": 50000,
+    "total_stocks": 200,
+    "total_days": 250,
+    "columns": [
+      "Unnamed: 0",
+      "stock",
+      "day",
+      "market_cap_class",
+      "sector",
+      "close_price",
+      "volume",
+      "volume_ratio_20d",
+      "volatility",
+      "delivery_pct",
+      "order_book_imbalance",
+      "sentiment_score",
+      "social_mentions",
+      "avg_trade_size",
+      "past_manipulation_flags",
+      "risk_score",
+      "manipulation_label"
+    ],
+    "class_distribution_counts": {
+      "0": 49010,
+      "1": 990
+    },
+    "class_distribution_pct": {
+      "0": 0.9802,
+      "1": 0.0198
+    },
+    "missing_percentage": {
+      "Unnamed: 0": 0.0,
+      "stock": 0.0,
+      "day": 0.0,
+      "market_cap_class": 0.0,
+      "sector": 0.0,
+      "close_price": 0.0,
+      "volume": 0.0,
+      "volume_ratio_20d": 0.0,
+      "volatility": 0.0,
+      "delivery_pct": 3.9600000000000004,
+      "order_book_imbalance": 6.0,
+      "sentiment_score": 8.15,
+      "social_mentions": 0.0,
+      "avg_trade_size": 0.0,
+      "past_manipulation_flags": 0.0,
+      "risk_score": 0.0,
+      "manipulation_label": 0.0
+    },
+    "skewness": {
+      "close_price": 0.11821273262392228,
+      "volume": 1.7305157082064482,
+      "volume_ratio_20d": 5.734530523353656,
+      "volatility": 1.1102534142196436,
+      "delivery_pct": -0.07959110301809459,
+      "order_book_imbalance": 0.11830841739734202,
+      "sentiment_score": 0.037754737070923826,
+      "social_mentions": 11.20423256574528,
+      "avg_trade_size": 0.648080964125431,
+      "past_manipulation_flags": 2.3432884787392836,
+      "risk_score": 6.486669113155312
+    },
+    "cap_class_means": {
+      "manipulation_label": {
+        "large": 0.003,
+        "small": 0.031
+      },
+      "risk_score": {
+        "large": 2.5830525,
+        "small": 4.301647333333333
+      }
+    },
+    "welch_t_test": {
+      "t_statistic": 46.813535253426075,
+      "p_value": 2.6219516156018267e-253,
+      "mean_manipulation_1": 2.877280909090909,
+      "mean_manipulation_0": 1.0844760538665579,
+      "std_manipulation_1": 1.204374843044022,
+      "std_manipulation_0": 0.26825629089750913,
+      "n_manipulation_1": 990,
+      "n_manipulation_0": 49010
+    },
+    "descriptive_statistics": {
+      "close_price": {
+        "count": 50000.0,
+        "mean": 252.5209528,
+        "std": 114.4459280430592,
+        "min": 48.45,
+        "25%": 153.8475,
+        "50%": 255.35000000000002,
+        "75%": 344.78,
+        "max": 708.61
+      },
+      "volume": {
+        "count": 50000.0,
+        "mean": 127856.06433599998,
+        "std": 167336.81127460784,
+        "min": 2110.8,
+        "25%": 12495.475,
+        "50%": 21465.1,
+        "75%": 225373.72499999998,
+        "max": 2459715.1
+      },
+      "volume_ratio_20d": {
+        "count": 50000.0,
+        "mean": 1.11997359,
+        "std": 0.40200713337926935,
+        "min": 0.5061,
+        "25%": 0.9349,
+        "50%": 1.0591,
+        "75%": 1.203,
+        "max": 11.3861
+      },
+      "volatility": {
+        "count": 50000.0,
+        "mean": 0.012245504,
+        "std": 0.0034861228364807544,
+        "min": 0.002,
+        "25%": 0.01002,
+        "50%": 0.01206,
+        "75%": 0.01417,
+        "max": 0.0428
+      },
+      "delivery_pct": {
+        "count": 48020.0,
+        "mean": 51.75493773427739,
+        "std": 9.208748010672682,
+        "min": 6.49,
+        "25%": 45.66,
+        "50%": 51.85,
+        "75%": 57.95,
+        "max": 89.96
+      },
+      "order_book_imbalance": {
+        "count": 47000.0,
+        "mean": 0.004051117021276595,
+        "std": 0.15489806979920312,
+        "min": -0.6768,
+        "25%": -0.09962499999999999,
+        "50%": 0.0023,
+        "75%": 0.1056,
+        "max": 0.7863
+      },
+      "sentiment_score": {
+        "count": 45925.0,
+        "mean": 0.05376544365813827,
+        "std": 0.25406872583858897,
+        "min": -0.98,
+        "25%": -0.1177,
+        "50%": 0.0529,
+        "75%": 0.2243,
+        "max": 0.98
+      },
+      "social_mentions": {
+        "count": 50000.0,
+        "mean": 8.567332,
+        "std": 13.497200401940761,
+        "min": 0.1,
+        "25%": 2.7,
+        "50%": 5.1,
+        "75%": 9.8,
+        "max": 656.1
+      },
+      "avg_trade_size": {
+        "count": 50000.0,
+        "mean": 1448.4421459999999,
+        "std": 859.6562640789411,
+        "min": 285.2,
+        "25%": 750.2,
+        "50%": 947.4,
+        "75%": 2279.9,
+        "max": 4274.6
+      },
+      "past_manipulation_flags": {
+        "count": 50000.0,
+        "mean": 0.33,
+        "std": 0.686374112411332,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 3.0
+      },
+      "risk_score": {
+        "count": 50000.0,
+        "mean": 3.6142094,
+        "std": 9.369527993450259,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.16,
+        "75%": 4.4325,
+        "max": 100.0
+      }
+    }
+  },
+  "linear_regression": {
+    "train_stocks": 160,
+    "test_stocks": 40,
+    "train_rows": 40000,
+    "test_rows": 10000,
+    "train_r2": 0.5204958351455737,
+    "test_r2": 0.5792262200930514,
+    "train_rmse": 6.298277713950822,
+    "test_rmse": 6.73605748110175,
+    "train_mae": 4.281169372206526,
+    "test_mae": 4.394065937719454,
+    "cv_folds_test_r2": [
+      0.5707243091381796,
+      0.5620762281147086,
+      0.46714178687393526,
+      0.47479918767856244,
+      0.5568675814431479
+    ],
+    "cv_folds_train_r2": [
+      0.5257237682430345,
+      0.5271154320710632,
+      0.5498878287988949,
+      0.5469438280209958,
+      0.5298964838509779
+    ],
+    "cv_folds_test_rmse": [
+      6.445743822419027,
+      6.752640525918614,
+      6.361117387360464,
+      6.026179819417359,
+      6.409209521579003
+    ],
+    "cv_mean_test_r2": 0.5263218186497067,
+    "cv_std_test_r2": 0.045474960682936605,
+    "cv_mean_train_r2": 0.5359134681969933,
+    "cv_mean_test_rmse": 6.398978215338893,
+    "coefficients": {
+      "delivery_pct": -0.5915695096595937,
+      "sector_Energy": -0.23261949477533392,
+      "sector_FMCG": -0.1637378440356329,
+      "sector_Pharma": -0.09262092954471834,
+      "sector_IT": -0.04333121426287988,
+      "past_manipulation_flags": 0.08507336171575652,
+      "sector_Banking": 0.15151887783586312,
+      "sector_Metals": 0.19852483014653924,
+      "close_price": 0.20466103959137466,
+      "sentiment_score": 0.47422537281516636,
+      "log_mentions": 0.5130768894509715,
+      "order_book_imbalance": 0.6789599417950755,
+      "avg_trade_size": 0.9465164770608024,
+      "volatility": 2.048931450096586,
+      "log_volume": 3.0936907371213596,
+      "volume_ratio_20d": 4.766866874745474,
+      "market_cap_class_small": 8.476546258810563
+    },
+    "feature_names": [
+      "close_price",
+      "volume_ratio_20d",
+      "volatility",
+      "delivery_pct",
+      "order_book_imbalance",
+      "sentiment_score",
+      "avg_trade_size",
+      "past_manipulation_flags",
+      "log_volume",
+      "log_mentions",
+      "market_cap_class_small",
+      "sector_Banking",
+      "sector_Energy",
+      "sector_FMCG",
+      "sector_IT",
+      "sector_Metals",
+      "sector_Pharma"
+    ]
+  },
+  "bias_variance": {
+    "polynomial_comparison": {
+      "1 feature": {
+        "train": 6.795172949341152,
+        "test": 7.357092033638251
+      },
+      "Degree 1": {
+        "train": 6.013019862803655,
+        "test": 6.721477826483938
+      },
+      "Degree 2": {
+        "train": 2.8547528133943687,
+        "test": 7.835927045114208
+      },
+      "Degree 3": {
+        "train": 3.4336822223149084,
+        "test": 14.301454296322534
+      }
+    },
+    "bias_variance_decomposition": {
+      "Degree 1": {
+        "bias_squared": 47.03219998838827,
+        "variance": 4.966356502569277,
+        "total_error": 51.99855649095755
+      },
+      "Degree 2": {
+        "bias_squared": 25.035753187580873,
+        "variance": 47.61607911912869,
+        "total_error": 72.65183230670957
+      },
+      "Degree 3": {
+        "bias_squared": 29.76691318073874,
+        "variance": 227.26211731711544,
+        "total_error": 257.0290304978542
+      }
+    },
+    "ridge_regularization": {
+      "best_alpha": 573.6152510448682,
+      "min_test_rmse": 5.410267079504738,
+      "baseline_rmse": 7.810717907712855,
+      "alphas": [
+        0.01,
+        0.01610262027560939,
+        0.02592943797404667,
+        0.041753189365604,
+        0.06723357536499334,
+        0.10826367338740546,
+        0.17433288221999882,
+        0.2807216203941177,
+        0.4520353656360243,
+        0.727895384398315,
+        1.1721022975334805,
+        1.8873918221350976,
+        3.039195382313198,
+        4.893900918477494,
+        7.880462815669913,
+        12.689610031679221,
+        20.433597178569418,
+        32.90344562312668,
+        52.98316906283707,
+        85.31678524172806,
+        137.3823795883264,
+        221.22162910704503,
+        356.2247890262444,
+        573.6152510448682,
+        923.6708571873866,
+        1487.3521072935118,
+        2395.026619987486,
+        3856.620421163472,
+        6210.169418915616,
+        10000.0
+      ],
+      "test_rmses": [
+        7.810717907712855,
+        7.796085771910881,
+        7.773563457598054,
+        7.739596118295842,
+        7.689642948286584,
+        7.618210846263687,
+        7.518968107468375,
+        7.385371070329799,
+        7.213006509681824,
+        7.004339966874983,
+        6.773391418488976,
+        6.544895067531202,
+        6.345518895342922,
+        6.19264751817292,
+        6.088718722465664,
+        6.022720042344344,
+        5.975089218672348,
+        5.924213040128897,
+        5.854712832012104,
+        5.763724315081579,
+        5.659855437075691,
+        5.5563616333517025,
+        5.466899171233757,
+        5.410267079504738,
+        5.422167852769174,
+        5.563523339195344,
+        5.906606784708157,
+        6.486526865705703,
+        7.2526793707720465,
+        8.082196006667697
+      ],
+      "train_rmses": [
+        2.854800578752374,
+        2.8548703090377474,
+        2.855033900641565,
+        2.855399451602497,
+        2.8561661747150766,
+        2.857661304272284,
+        2.8603807931195315,
+        2.86508122410322,
+        2.8729579057004835,
+        2.885730896979575,
+        2.905248364450066,
+        2.9325767726195533,
+        2.9673535781615463,
+        3.0081287735352906,
+        3.053314672463637,
+        3.101907033093598,
+        3.1536916487618156,
+        3.2091785518226104,
+        3.2696758764409086,
+        3.3375895219170575,
+        3.416593558618295,
+        3.5116769122828777,
+        3.629983474139715,
+        3.7835225649749082,
+        3.9935250892461647,
+        4.29265208913667,
+        4.715754821423639,
+        5.273274495362353,
+        5.925652652747882,
+        6.591650334714015
+      ]
+    }
+  },
+  "classifiers": {
+    "best_model": "Random Forest (Balanced)",
+    "alert_threshold": 0.732531381703147,
+    "threshold_metrics": {
+      "precision": 0.8789731051344744,
+      "recall": 0.7262626262626263,
+      "f1": 0.7953539823008849
+    },
+    "comparison_results": {
+      "Decision Tree": {
+        "precision": 0.3092394306135916,
+        "precision_std": 0.020903005267940585,
+        "recall": 0.8601976911976912,
+        "recall_std": 0.027987534196215313,
+        "f1": 0.45478747991669194,
+        "f1_std": 0.02639225529463011,
+        "pr_auc": 0.5744817488999434,
+        "pr_auc_std": 0.09114083815469516
+      },
+      "Random Forest (Balanced)": {
+        "precision": 0.6803305306895252,
+        "precision_std": 0.0424284019858846,
+        "recall": 0.8289689754689755,
+        "recall_std": 0.029223393644287558,
+        "f1": 0.7469728146531011,
+        "f1_std": 0.03524362100357934,
+        "pr_auc": 0.8468186619460504,
+        "pr_auc_std": 0.030069201574496066
+      },
+      "SMOTE + Random Forest": {
+        "precision": 0.565458852029409,
+        "precision_std": 0.053672420842567105,
+        "recall": 0.824419191919192,
+        "recall_std": 0.038222314316415845,
+        "f1": 0.6700174142038496,
+        "f1_std": 0.04797822319804684,
+        "pr_auc": 0.8286036152444668,
+        "pr_auc_std": 0.043590372903178375
+      },
+      "Isolation Forest": {
+        "precision": 0.9544887367275703,
+        "precision_std": 0.02087119470518382,
+        "recall": 0.3269386724386724,
+        "recall_std": 0.05592871191333557,
+        "f1": 0.4837400750596654,
+        "f1_std": 0.06356963059439247,
+        "pr_auc": 0.5942984681820916,
+        "pr_auc_std": 0.040995230389310015
+      }
+    },
+    "top_features": {
+      "volume_ratio_20d": 0.4142797387687002,
+      "volatility": 0.22058527717138074,
+      "log_volume": 0.09527146237365637,
+      "order_book_imbalance": 0.07198506073944479,
+      "delivery_pct": 0.04689156633634381,
+      "avg_trade_size": 0.04286993201495476,
+      "market_cap_class_small": 0.03644711893976965,
+      "log_mentions": 0.022550044945276505,
+      "close_price": 0.018461327676817456,
+      "sentiment_score": 0.018043372269496073,
+      "past_manipulation_flags": 0.006321125093492452,
+      "sector_Banking": 0.002107909795864557,
+      "sector_IT": 0.0011356645150071918,
+      "sector_Pharma": 0.0008321142730842967,
+      "sector_FMCG": 0.0007840056874545125,
+      "sector_Energy": 0.0007784510848787738,
+      "sector_Metals": 0.0006558283143780615
+    }
+  },
+  "pdf_vs_actual": [
+    {
+      "metric": "Dataset Shape",
+      "pdf_value": "(50000, 17)",
+      "my_value": "(50000, 17)",
+      "notes": "Exact match across 200 stocks and 250 trading days including Unnamed: 0"
+    },
+    {
+      "metric": "Overall Manipulation Rate",
+      "pdf_value": "2.2%",
+      "my_value": "1.98%",
+      "notes": "Accurately calibrated close to ~2.2% target"
+    },
+    {
+      "metric": "Small vs Large Cap Manipulation",
+      "pdf_value": "3.2% vs 0.5%",
+      "my_value": "3.10% vs 0.30%",
+      "notes": "Small caps are significantly more vulnerable to operator pump-and-dump"
+    },
+    {
+      "metric": "Missing % (Delivery, Imbalance, Sentiment)",
+      "pdf_value": "3.96%, 6.00%, 8.15%",
+      "my_value": "3.96%, 6.00%, 8.15%",
+      "notes": "Exact injection rates matching slides 6 and 11"
+    },
+    {
+      "metric": "Welch t-test on volume_ratio_20d",
+      "pdf_value": "t=44, p=5e-257",
+      "my_value": "t=46.81, p=2.62e-253",
+      "notes": "Highly significant difference (p < 0.001); operator volume surge confirmed"
+    },
+    {
+      "metric": "Mean Volume Ratio (Label 1 vs 0)",
+      "pdf_value": "2.78 vs 1.05",
+      "my_value": "2.88 vs 1.08",
+      "notes": "Volume surges ~2.7x above baseline during ramp period"
+    },
+    {
+      "metric": "Linear Regression Test R\u00b2",
+      "pdf_value": "0.604 (train 0.570)",
+      "my_value": "0.579 (train 0.520)",
+      "notes": "Freshly computed on 80/20 GroupShuffleSplit unseen stocks"
+    },
+    {
+      "metric": "Linear Regression Test RMSE",
+      "pdf_value": "6.43",
+      "my_value": "6.74",
+      "notes": "0-100 scale residual error on unseen test stocks"
+    },
+    {
+      "metric": "Linear Regression Test MAE",
+      "pdf_value": "4.44",
+      "my_value": "4.39",
+      "notes": "Average absolute risk score discrepancy"
+    },
+    {
+      "metric": "5-Fold GroupKFold Mean Test R\u00b2",
+      "pdf_value": "0.568 \u00b1 0.036",
+      "my_value": "0.526 \u00b1 0.045",
+      "notes": "Grouped cross-validation without stock leakage across folds"
+    },
+    {
+      "metric": "5-Fold CV Mean RMSE",
+      "pdf_value": "6.42",
+      "my_value": "6.40",
+      "notes": "Consistent cross-validation error across all 5 test rotations"
+    },
+    {
+      "metric": "Polynomial 400-row Degree 3 Overfit",
+      "pdf_value": "Train 0.00, Test 15.68",
+      "my_value": "Train 3.43, Test 14.30",
+      "notes": "Demonstrates training memorization and severe test generalization penalty"
+    },
+    {
+      "metric": "Ridge Regularization on Degree 2",
+      "pdf_value": "RMSE 6.93 -> 5.12 at alpha \u2248 1000",
+      "my_value": "RMSE 7.81 -> 5.41 at alpha = 573.6",
+      "notes": "L2 regularization penalizes extreme polynomial weights, shrinking test error"
+    },
+    {
+      "metric": "Best Classification Model",
+      "pdf_value": "RandomForest / SMOTE extension proposed in Slide 19",
+      "my_value": "Random Forest (Balanced) (F1: 0.795, PR-AUC: 0.847)",
+      "notes": "Fully implemented extension with GroupKFold cross-validation and PR threshold tuning"
+    }
+  ]
+}
